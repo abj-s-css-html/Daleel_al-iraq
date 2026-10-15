@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Daleel Iraq | Discover Iraq</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Leaflet Map -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <div class="logo-mark">🇮🇶</div>
+
+            <div>
+                <h2>Daleel Iraq</h2>
+                <span>Discover • Explore • Experience</span>
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#places">Explore</a>
+            <a href="#planner">Planner</a>
+            <a href="#ai">Daleel AI</a>
+        </nav>
+
+        <a href="#planner" class="nav-button">
+            Plan My Trip
+        </a>
+
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    🇮🇶 YOUR SMART GUIDE TO IRAQ
+                </span>
+
+                <h1>
+                    Discover the
+                    <span>Beauty of Iraq</span>
+                </h1>
+
+                <p>
+                    Explore Iraq's historical treasures, breathtaking landscapes,
+                    cultural experiences and hidden gems — all in one smart guide.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#places" class="primary-button">
+                        Explore Iraq
+                        <span>→</span>
+                    </a>
+
+                    <a href="#planner" class="secondary-button">
+                        Plan My Trip
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div>
+                        <strong>18+</strong>
+                        <span>Destinations</span>
+                    </div>
+
+                    <div>
+                        <strong>7</strong>
+                        <span>Cities</span>
+                    </div>
+
+                    <div>
+                        <strong>∞</strong>
+                        <span>Experiences</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INTRO
+        ========================== -->
+
+        <section class="intro-section">
+
+            <div class="section-heading center">
+
+                <span class="section-label">
+                    WHY DALEEL IRAQ?
+                </span>
+
+                <h2>
+                    Iraq is more than
+                    <span>history.</span>
+                </h2>
+
+                <p>
+                    From ancient civilizations to breathtaking nature,
+                    discover the Iraq that deserves to be explored.
+                </p>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">🏛️</div>
+
+                    <h3>Ancient History</h3>
+
+                    <p>
+                        Walk through the land where some of the world's
+                        greatest civilizations began.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">🏔️</div>
+
+                    <h3>Natural Beauty</h3>
+
+                    <p>
+                        Discover mountains, waterfalls, marshes,
+                        rivers and peaceful landscapes.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">🍽️</div>
+
+                    <h3>Local Experiences</h3>
+
+                    <p>
+                        Taste Iraqi food, discover local culture
+                        and experience authentic Iraqi hospitality.
+                    </p>
+
+                </article>
+
+
+                <article class="feature-card">
+
+                    <div class="feature-icon">🤖</div>
+
+                    <h3>Smart Planning</h3>
+
+                    <p>
+                        Let Daleel AI create a personalized trip
+                        according to your interests and budget.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EXPLORE
+        ========================== -->
+
+        <section class="places-section" id="places">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">
+                        EXPLORE IRAQ
+                    </span>
+
+                    <h2>
+                        Places worth
+                        <span>discovering.</span>
+                    </h2>
+                </div>
+
+                <p>
+                    Explore carefully selected destinations across Iraq.
+                </p>
+
+            </div>
+
+
+            <!-- SEARCH -->
+
+            <div class="explore-controls">
+
+                <div class="search-box">
+
+                    <span>⌕</span>
+
+                    <input
+                        type="text"
+                        id="searchInput"
+                        placeholder="Search for a place..."
+                    >
+
+                </div>
+
+
+                <div class="filter-buttons">
+
+                    <button class="filter active" data-city="all">
+                        All
+                    </button>
+
+                    <button class="filter" data-city="Baghdad">
+                        Baghdad
+                    </button>
+
+                    <button class="filter" data-city="Erbil">
+                        Erbil
+                    </button>
+
+                    <button class="filter" data-city="Sulaymaniyah">
+                        Sulaymaniyah
+                    </button>
+
+                    <button class="filter" data-city="Basra">
+                        Basra
+                    </button>
+
+                    <button class="filter" data-city="Najaf">
+                        Najaf
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- PLACE CARDS -->
+
+            <div class="places-grid" id="placesGrid">
+
+                <!-- CARD 1 -->
+
+                <article
+                    class="place-card"
+                    data-city="Baghdad"
+                    data-name="Al-Mutanabbi Street"
+                >
+
+                    <div class="place-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&w=1000&q=85"
+                            alt="Baghdad"
+                        >
+
+                        <span class="city-tag">
+                            Baghdad
+                        </span>
+
+                        <button
+                            class="heart-button"
+                            onclick="toggleFavorite(this)"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="place-content">
+
+                        <span class="place-type">
+                            CULTURE
+                        </span>
+
+                        <h3>
+                            Al-Mutanabbi Street
+                        </h3>
+
+                        <p>
+                            One of Baghdad's most iconic cultural streets,
+                            filled with books, history and local life.
+                        </p>
+
+                        <div class="place-footer">
+
+                            <span>
+                                📍 Baghdad
+                            </span>
+
+                            <span class="rating">
+                                ★ 4.9
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARD 2 -->
+
+                <article
+                    class="place-card"
+                    data-city="Erbil"
+                    data-name="Erbil Citadel"
+                >
+
+                    <div class="place-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1590079015082-6f8c5f3f2e2a?auto=format&fit=crop&w=1000&q=85"
+                            alt="Erbil Citadel"
+                        >
+
+                        <span class="city-tag">
+                            Erbil
+                        </span>
+
+                        <button
+                            class="heart-button"
+                            onclick="toggleFavorite(this)"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="place-content">
+
+                        <span class="place-type">
+                            HISTORY
+                        </span>
+
+                        <h3>
+                            Erbil Citadel
+                        </h3>
+
+                        <p>
+                            A remarkable historic landmark rising above
+                            the heart of Erbil.
+                        </p>
+
+                        <div class="place-footer">
+
+                            <span>
+                                📍 Erbil
+                            </span>
+
+                            <span class="rating">
+                                ★ 4.9
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARD 3 -->
+
+                <article
+                    class="place-card"
+                    data-city="Sulaymaniyah"
+                    data-name="Dukan Lake"
+                >
+
+                    <div class="place-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1000&q=85"
+                            alt="Dukan Lake"
+                        >
+
+                        <span class="city-tag">
+                            Sulaymaniyah
+                        </span>
+
+                        <button
+                            class="heart-button"
+                            onclick="toggleFavorite(this)"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="place-content">
+
+                        <span class="place-type">
+                            NATURE
+                        </span>
+
+                        <h3>
+                            Dukan Lake
+                        </h3>
+
+                        <p>
+                            A peaceful destination surrounded by mountains
+                            and beautiful Kurdistan landscapes.
+                        </p>
+
+                        <div class="place-footer">
+
+                            <span>
+                                📍 Sulaymaniyah
+                            </span>
+
+                            <span class="rating">
+                                ★ 4.8
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARD 4 -->
+
+                <article
+                    class="place-card"
+                    data-city="Basra"
+                    data-name="Shatt Al-Arab"
+                >
+
+                    <div class="place-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85"
+                            alt="Basra"
+                        >
+
+                        <span class="city-tag">
+                            Basra
+                        </span>
+
+                        <button
+                            class="heart-button"
+                            onclick="toggleFavorite(this)"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="place-content">
+
+                        <span class="place-type">
+                            NATURE
+                        </span>
+
+                        <h3>
+                            Shatt Al-Arab
+                        </h3>
+
+                        <p>
+                            Experience the beauty of southern Iraq,
+                            rivers and the unique atmosphere of Basra.
+                        </p>
+
+                        <div class="place-footer">
+
+                            <span>
+                                📍 Basra
+                            </span>
+
+                            <span class="rating">
+                                ★ 4.7
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARD 5 -->
+
+                <article
+                    class="place-card"
+                    data-city="Najaf"
+                    data-name="Najaf Old City"
+                >
+
+                    <div class="place-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e?auto=format&fit=crop&w=1000&q=85"
+                            alt="Najaf"
+                        >
+
+                        <span class="city-tag">
+                            Najaf
+                        </span>
+
+                        <button
+                            class="heart-button"
+                            onclick="toggleFavorite(this)"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="place-content">
+
+                        <span class="place-type">
+                            CULTURE
+                        </span>
+
+                        <h3>
+                            Najaf Old City
+                        </h3>
+
+                        <p>
+                            Discover a city rich with history,
+                            architecture and cultural heritage.
+                        </p>
+
+                        <div class="place-footer">
+
+                            <span>
+                                📍 Najaf
+                            </span>
+
+                            <span class="rating">
+                                ★ 4.8
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- CARD 6 -->
+
+                <article
+                    class="place-card"
+                    data-city="Erbil"
+                    data-name="Rawanduz Canyon"
+                >
+
+                    <div class="place-image">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85"
+                            alt="Rawanduz"
+                        >
+
+                        <span class="city-tag">
+                            Erbil
+                        </span>
+
+                        <button
+                            class="heart-button"
+                            onclick="toggleFavorite(this)"
+                        >
+                            ♡
+                        </button>
+
+                    </div>
+
+                    <div class="place-content">
+
+                        <span class="place-type">
+                            ADVENTURE
+                        </span>
+
+                        <h3>
+                            Rawanduz Canyon
+                        </h3>
+
+                        <p>
+                            Dramatic mountains and spectacular views
+                            for nature and adventure lovers.
+                        </p>
+
+                        <div class="place-footer">
+
+                            <span>
+                                📍 Erbil
+                            </span>
+
+                            <span class="rating">
+                                ★ 4.9
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+
+            <div
+                class="no-results"
+                id="noResults"
+            >
+                No destinations found.
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PLANNER
+        ========================== -->
+
+        <section class="planner-section" id="planner">
+
+            <div class="planner-container">
+
+                <div class="planner-intro">
+
+                    <span class="section-label">
+                        SMART TRAVEL PLANNER
+                    </span>
+
+                    <h2>
+                        Build your perfect
+                        <span>Iraq trip.</span>
+                    </h2>
+
+                    <p>
+                        Tell us what you like and Daleel will create
+                        a simple personalized travel plan for you.
+                    </p>
+
+
+                    <div class="planner-benefits">
+
+                        <div>
+                            <span>✓</span>
+                            Personalized itinerary
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            Budget-aware suggestions
+                        </div>
+
+                        <div>
+                            <span>✓</span>
+                            Places matched to your interests
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="planner-card">
+
+                    <div class="planner-step">
+
+                        <label>
+                            01 — Choose your city
+                        </label>
+
+                        <select id="citySelect">
+
+                            <option value="">
+                                Select a city
+                            </option>
+
+                            <option value="Baghdad">
+                                Baghdad
+                            </option>
+
+                            <option value="Erbil">
+                                Erbil
+                            </option>
+
+                            <option value="Sulaymaniyah">
+                                Sulaymaniyah
+                            </option>
+
+                            <option value="Basra">
+                                Basra
+                            </option>
+
+                            <option value="Najaf">
+                                Najaf
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="planner-step">
+
+                        <label>
+                            02 — What do you love?
+                        </label>
+
+                        <div class="interest-options">
+
+                            <button
+                                class="interest active"
+                                data-interest="history"
+                            >
+                                🏛️ History
+                            </button>
+
+                            <button
+                                class="interest"
+                                data-interest="nature"
+                            >
+                                🌿 Nature
+                            </button>
+
+                            <button
+                                class="interest"
+                                data-interest="food"
+                            >
+                                🍽️ Food
+                            </button>
+
+                            <button
+                                class="interest"
+                                data-interest="culture"
+                            >
+                                🎭 Culture
+                            </button>
+
+                            <button
+                                class="interest"
+                                data-interest="adventure"
+                            >
+                                🏔️ Adventure
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="planner-step">
+
+                        <label>
+                            03 — Your budget
+                        </label>
+
+                        <div class="budget-options">
+
+                            <button
+                                class="budget active"
+                                data-budget="low"
+                            >
+                                💚 Budget
+                            </button>
+
+                            <button
+                                class="budget"
+                                data-budget="medium"
+                            >
+                                💛 Moderate
+                            </button>
+
+                            <button
+                                class="budget"
+                                data-budget="high"
+                            >
+                                💎 Premium
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="generate-button"
+                        onclick="generateTrip()"
+                    >
+                        Create My Trip
+                        <span>✦</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- GENERATED PLAN -->
+
+            <div
+                class="trip-result"
+                id="tripResult"
+            >
+
+                <div class="result-header">
+
+                    <div>
+                        <span class="section-label">
+                            YOUR PERSONALIZED PLAN
+                        </span>
+
+                        <h2 id="tripTitle">
+                            Your Iraq Adventure
+                        </h2>
+                    </div>
+
+                    <span class="ai-badge">
+                        ✦ DALEEL AI
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="trip-days"
+                    id="tripDays"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MAP
+        ========================== -->
+
+        <section class="map-section">
+
+            <div class="section-heading center">
+
+                <span class="section-label">
+                    EXPLORE ON THE MAP
+                </span>
+
+                <h2>
+                    Find Iraq on
+                    <span>the map.</span>
+                </h2>
+
+                <p>
+                    Explore selected destinations and plan your journey visually.
+                </p>
+
+            </div>
+
+
+            <div class="map-wrapper">
+
+                <div id="iraqMap"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             DALEEL AI
+        ========================== -->
+
+        <section class="ai-section" id="ai">
+
+            <div class="ai-card">
+
+                <div class="ai-glow"></div>
+
+                <div class="ai-content">
+
+                    <div class="ai-icon">
+                        ✦
+                    </div>
+
+                    <span class="section-label">
+                        SMART IRAQI TRAVEL ASSISTANT
+                    </span>
+
+                    <h2>
+                        Meet
+                        <span>Daleel AI.</span>
+                    </h2>
+
+                    <p>
+                        A smart travel assistant designed to help visitors
+                        discover Iraq based on their city, interests and budget.
+                    </p>
+
+
+                    <div class="ai-features">
+
+                        <div>
+                            <span>01</span>
+                            Understand your interests
+                        </div>
+
+                        <div>
+                            <span>02</span>
+                            Match you with destinations
+                        </div>
+
+                        <div>
+                            <span>03</span>
+                            Build your itinerary
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        class="ai-button"
+                        onclick="openAIMessage()"
+                    >
+                        Ask Daleel AI
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+                <div class="ai-chat-preview">
+
+                    <div class="chat-top">
+
+                        <div class="ai-avatar">
+                            ✦
+                        </div>
+
+                        <div>
+                            <strong>Daleel AI</strong>
+                            <small>Travel Assistant</small>
+                        </div>
+
+                        <span class="online-dot"></span>
+
+                    </div>
+
+
+                    <div class="chat-message bot">
+
+                        Hi! 👋
+                        <br>
+                        I'm Daleel AI.
+                        <br><br>
+                        Tell me what kind of Iraqi experience
+                        you're looking for.
+
+                    </div>
+
+
+                    <div class="chat-message user">
+
+                        I love history and nature.
+
+                    </div>
+
+
+                    <div class="chat-message bot">
+
+                        Perfect! 🇮🇶
+                        <br>
+                        I can suggest a trip combining
+                        historical landmarks and beautiful landscapes.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CTA
+        ========================== -->
+
+        <section class="final-cta">
+
+            <span class="section-label">
+                YOUR NEXT ADVENTURE
+            </span>
+
+            <h2>
+                Iraq is waiting
+                <span>for you.</span>
+            </h2>
+
+            <p>
+                Discover the stories, places and experiences
+                that make Iraq unforgettable.
+            </p>
+
+            <a
+                href="#planner"
+                class="primary-button"
+            >
+                Start Planning
+                <span>→</span>
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            <div class="logo-mark">
+                🇮🇶
+            </div>
+
+            <div>
+                <strong>Daleel Iraq</strong>
+                <small>
+                    Discover Iraq differently.
+                </small>
+            </div>
+
+        </div>
+
+
+        <div class="footer-center">
+
+            <span>
+                Made with ♥ for Iraq
+            </span>
+
+        </div>
+
+
+        <div class="footer-right">
+
+            <span>
+                Hackathon Project
+            </span>
+
+        </div>
+
+    </footer>
+
+
+    <!-- AI MODAL -->
+
+    <div
+        class="modal"
+        id="aiModal"
+    >
+
+        <div class="modal-content">
+
+            <button
+                class="close-modal"
+                onclick="closeAIMessage()"
+            >
+                ×
+            </button>
+
+            <div class="modal-icon">
+                ✦
+            </div>
+
+            <span class="section-label">
+                DALEEL AI
+            </span>
+
+            <h2>
+                Your smart guide to Iraq.
+            </h2>
+
+            <p>
+                Daleel AI can help you discover destinations,
+                compare experiences and build a personalized itinerary.
+            </p>
+
+            <div class="demo-prompt">
+
+                <span>Try asking:</span>
+
+                <strong>
+                    "Plan a 2-day cultural trip in Baghdad."
+                </strong>
+
+            </div>
+
+            <button
+                class="primary-button"
+                onclick="closeAIMessage(); document.getElementById('planner').scrollIntoView({behavior:'smooth'});"
+            >
+                Open Trip Planner →
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- BACK TO TOP -->
+
+    <button
+        class="back-top"
+        id="backTop"
+        onclick="window.scrollTo({top:0, behavior:'smooth'})"
+    >
+        ↑
+    </button>
+
+
+    <!-- Leaflet -->
+    <script
+        src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    ></script>
+
+    <!-- Main JS -->
+    <script src="script.js"></script>
+
+</body>
+</html>
