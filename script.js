@@ -6,6 +6,35 @@
 /* =========================
    DATA
 ========================= */
+// التحكم بقائمة الهاتف (Mobile Menu)
+const barsOfShowSections = document.querySelector(".bars-of-sections");
+const headLinks = document.querySelector(".nav-links");
+
+barsOfShowSections.onclick = () => {
+    headLinks.classList.toggle("show");
+};
+
+// التحكم بنافذة البحث المنبثقة (Search Modal)
+const openSearchBtn = document.getElementById("openSearchModal");
+const closeSearchBtn = document.getElementById("closeSearchModal");
+const searchModal = document.getElementById("searchModal");
+const modalSearchInput = document.getElementById("modalSearchInput");
+
+openSearchBtn.onclick = () => {
+    searchModal.classList.add("show");
+    setTimeout(() => modalSearchInput.focus(), 100); // التركيز تلقائياً على حقل الكتابة
+};
+
+closeSearchBtn.onclick = () => {
+    searchModal.classList.remove("show");
+};
+
+// إغلاق النافذة عند الضغط خارج الـ Modal Content
+searchModal.onclick = (e) => {
+    if (e.target === searchModal) {
+        searchModal.classList.remove("show");
+    }
+};
 
 const destinations = {
 
@@ -636,7 +665,7 @@ function generateTrip() {
 
 
     tripDays.innerHTML = "";
-
+openAIMessage
 
     places.forEach((place, index) => {
 

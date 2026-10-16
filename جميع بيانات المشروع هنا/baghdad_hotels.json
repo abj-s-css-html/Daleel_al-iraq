@@ -1,0 +1,97 @@
+{
+  "city": "بغداد",
+  "country": "العراق",
+  "note": "القائمة مجمّعة من دليل فنادق ومواقع حجز (تحديثات 2025 و2026). لم أتحقق من التقييمات ولا النجوم، ولم أجد عناوين دقيقة. الحقل area_source يوضح من أين أُخذت المنطقة. تحقق من الحجز والعنوان والأسعار الحالية قبل الاعتماد على أي فندق.",
+  "overview": {
+    "price_notes": [
+      "ذكر تقرير سياحي أن تكلفة الفنادق في بغداد بين 160 و210 دولارًا لشخصين في الليلة (التاريخ غير واضح).",
+      "ذكر موقع Trip.com أن فنادق الخمس نجوم تكلف عادة نحو 281 دولارًا في الليلة خلال أيام الأسبوع.",
+      "ظهر Babylon Rotana بسعر يبدأ من نحو 190 يورو في الليلة على موقع حجز ألماني."
+    ],
+    "weather_note": "أفضل مواسم الزيارة مارس–مايو وسبتمبر–نوفمبر، وقد تتجاوز الحرارة 40 درجة في الصيف."
+  },
+  
+  "hotels": [
+    {
+      "id": "babylon_rotana",
+      "name_ar": "فندق بابل روتانا",
+      "name_en": "Babylon Rotana Hotel",
+      "area": "الجادرية"
+      
+      
+    },
+    {
+      "id": "palestine",
+      "name_ar": "فندق فلسطين الدولي",
+      "name_en": "International Palestine Hotel",
+      "area": "أبو نؤاس"
+      
+      
+    },
+    {
+      "id": "al_mansour",
+      "name_ar": "فندق المنصور",
+      "name_en": "Al-Mansour Hotel",
+      "area": "المنصور"
+      
+      
+    },
+    {
+      "id": "al_yarmouk",
+      "name_ar": "فندق اليرموك الدولي",
+      "name_en": "Al Yarmouk International Hotel",
+      "area": "اليرموك"
+      
+      
+    },
+    {
+      "id": "movenpick_zaytoon",
+      "name_ar": "موفنبيك فندق الزيتون بغداد",
+      "name_en": "Movenpick Hotel Al Zaytoon Baghdad",
+      "area": "غير محددة"
+      
+      
+    },
+    {
+      "id": "baghdad_hotel",
+      "name_ar": "فندق بغداد",
+      "name_en": "Baghdad Hotel",
+      "area": "أبو نؤاس "
+      
+      
+    },
+    {
+      "id": "noor_land",
+      "name_ar": "فندق نور لاند",
+      "name_en": "Noor Land Hotel",
+      "area": "الكرادة"
+      
+      
+    },
+    {
+      "id": "coral_baghdad",
+      "name_ar": "فندق كورال بغداد",
+      "name_en": "Coral Baghdad Hotel",
+      "area": "الجادرية"
+      
+      
+    },
+    {
+      "id": "coral_palace",
+      "name_ar": null,
+      "name_en": "Coral Palace Hotel",
+      "area": "الجادرية"
+      
+    },
+    {
+      "id": "shaheen",
+      "name_ar": "فندق شاهين بغداد",
+      "name_en": "Shaheen Hotel Baghdad",
+      "area": "الكرادة"
+      
+      
+    }
+    
+  ]
+  
+}

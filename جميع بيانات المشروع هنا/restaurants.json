@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Bestoon Samad Restaurant",
+    "category": "عراقي",
+    "famous_for": "الأكلات العراقية والكباب"
+  },
+  {
+    "id": 2,
+    "name": "Masgouf  Baghdad",
+    "category": "عراقي",
+    "famous_for": "المسكوف العراقي"
+  },
+  {
+    "id": 3,
+    "name": "Kibbeh Al-Baghdadi Restaurant",
+    "category": "عراقي",
+    "famous_for": "الكبة والأكلات العراقية"
+  },
+  {
+    "id": 4,
+    "name": "Haji Qadoury Restaurant",
+    "category": "عراقي",
+    "famous_for": "الأكلات الشعبية العراقية"
+  },
+  {
+    "id": 5,
+    "name": "DAN Restaurant",
+    "category": "عراقي",
+    "famous_for": "المطبخ العراقي المعاصر"
+  },
+  {
+    "id": 6,
+    "name": "Chef Burak Baghdad",
+    "category": "عالمي",
+    "famous_for": "المطبخ التركي"
+  },
+  {
+    "id": 7,
+    "name": "Azzurro",
+    "category": "عالمي",
+    "famous_for": "الأكلات الإيطالية"
+  },
+  {
+    "id": 8,
+    "name": "Santorini Restaurant Iraq",
+    "category": "عالمي",
+    "famous_for": "المطبخ اليوناني"
+  },
+  {
+    "id": 9,
+    "name": "HuQQabaz Baghdad",
+    "category": "عالمي",
+    "famous_for": "أطباق عالمية وتركية"
+  },
+  {
+    "id": 10,
+    "name": "Mazaya",
+    "category": "عالمي",
+    "famous_for": "الأكلات الإيطالية والصينية"
+  }
+]
